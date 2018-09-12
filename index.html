@@ -1,7 +1,107 @@
+
 <!DOCTYPE html>
 <html>
+<title>Seyed Sobhan Mir Yoosefi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
 <body>
-<h1>Hello World</h1>
-<p>Salam Dadash  hhhhh</p>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <a href="CV.pdf" class="w3-bar-item w3-button w3-hide-small w3-hover-white">CV</a>
+  </div>
+</div>
+
+
+
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Seyed Sobhan Mir Yoosefi</h1>
+      <p>I am a first year Ph.D. student at the Computer Science Department of Princeton University. Before joining Princeton University, I finished my B.Sc. in Computer Engineering at the Sharif University of Technology, Iran. </p>
+      <p>My primary research interests are <b>Algorithm Design, Approximation/Randomized Algorithms, and Algorithmic Game Theory</b>. You can find my CV <a href="CV.pdf">here</a>.
+    </div>
+    <div class="w3-third w3-container">
+      <img class="picture" width="225" height="270" src="sobhan.jpg" align="right" hspace="10" vspace="10" alt="Seyed Sobhan Mir Yoosefi">
+    </div>
+
+     <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Contact</h2>
+      <p>
+                Seyed Sobhan Mir Yoosefi<br/>
+                Computer Science Department<br/>
+		Princeton University <br/>
+		35 Olden Street <br/>
+                Princeton, NJ 08544 <br/>
+            </p>
+
+
+      <h4 class="w3-text-teal">Email</h4>
+      		<p>
+                <a style="text-decoration: none" href="mailto:miryoosefi@cs.princeton.edu"> miryoosefi@cs.princeton.edu </a> <br/>
+                <a style="text-decoration: none" href="mailto:sobhan.miryoosefi@gmail.com"> sobhan.miryoosefi@gmail.com </a> <br/>
+            </p>
+
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+ </div>
+
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
 </body>
 </html>
